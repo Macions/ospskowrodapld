@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+header{
+    display: flex;
+    background-color: black;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    align-items: center;
+}
+.logoimg{
+    height: 90px;
+    width: 90px;
+}
+.logotext{
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+header ul{
+    display: inline-flex;
+    list-style-type: none;
+    
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    font-size: 20px;
+    font-weight: 100;
+    
+}
+li.menuitems {
+    width: max-content;
+    position: relative;
+    padding: 0px 50px;
+  }
+  
+  li.menuitems::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2px;
+    background-color: white;
+    transform-origin: right; /* Zmieniono transform-origin na right */
+    transition: transform 0.3s ease-in-out; /* Zmieniono właściwość transition na transform */
+  }
+  
+  li.menuitems:hover::before {
+    transform: scaleX(0) translateX(-100%); /* Dodano transformację scaleX i translateX */
+  }
+  
+  
