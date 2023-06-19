@@ -13,7 +13,7 @@
         <img class="logoimg" src="logo.png" alt="firefighter-logo">
         <div class="logotext">OSP Skowroda Południowa</div>
         <ul>
-            <li class="menuitems">O OSP 
+            <li class="menuitems" id="aboutusbuttonmenu">O OSP 
                 <div class="submenu">
                     <div class="submenuitems"></div>
                 </div>
@@ -57,5 +57,33 @@
         <div class="cytattop">„Służymy, by ratować”</div>
     <img src="banertop.png" alt="banertop" class="banertopimg">
 </div>
+
+    <section id="aboutus" class="aboutus">
+        <div class="aboutustoptitle">O nas</div>
+    </section>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          window.addEventListener('load', function() {
+            // Znajdź element, który chcesz animować
+            var element = document.querySelector('.toptext');
+            var cytat = document.querySelector('.cytattop');
+        
+            // Dodaj klasę .show, aby uruchomić animację
+            element.classList.add('show');
+            cytat.classList.add('showcytattop');
+          });
+        
+          var aboutusbuttonmenu = document.querySelector('#aboutusbuttonmenu');
+        
+          aboutusbuttonmenu.addEventListener("click", function() {
+            var aboutussection = document.querySelector('#aboutus');
+            aboutussection.scrollIntoView({ behavior: "smooth" });
+          });
+        });
+      </script>
+      
+      
 </body>
 </html>
