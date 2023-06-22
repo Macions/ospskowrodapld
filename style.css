@@ -1,11 +1,14 @@
-
+/* Ustawienie globalne */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/* Import czcionki */
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* Ustawienia dla header  */
 header{
     display: flex;
     background-color: black;
@@ -13,15 +16,21 @@ header{
     font-family: 'Ubuntu', sans-serif;
     align-items: center;
 }
+
+/* Style dla obrazku logo znajdującego się w header */
 .logoimg{
     height: 90px;
     width: 90px;
 }
+
+/* Style dla tekstu znjadującego się obok logo przedstawiającego "OSP Skowroda Południowa" */
 .logotext {
     font-size: 20px;
     font-weight: 700;
     position: relative;
 }
+
+/* Kreska pionowa z prawej strony tekstu logo */
 
 .logotext::before {
     content: "";
@@ -33,6 +42,9 @@ header{
     right: -20px;
 }
 
+
+/* Style dla ul menu w headerze */
+
 header ul {
     display: inline-flex;
     list-style-type: none;
@@ -43,10 +55,15 @@ header ul {
     font-weight: 100;
   }
   
+
+  /* Style dla li (punktów) menu  */
+
   li.menuitems {
     position: relative;
     cursor: pointer;
   }
+  
+/* Styl dla kreski pod li menu */
   
   li.menuitems::before {
     content: "";
@@ -63,18 +80,33 @@ header ul {
     transition-duration: .4s;
   }
   
+/* Zmienienie wartości szerokościu kreski z 0 na 100% punktu plus 40 px po najechaniu na punkt menu*/
+
 li.menuitems:hover::before{
     width: calc(100% + 40px);
 }
+
+
+/* Style dla zdjęcia baneru */
+
+
 img.banertopimg{
     width: 80%;
     height: auto;
     position: absolute;
     right: 0;
 }
+
+/* Styl dla całego kontenera górnego pod menu nad o nas */
+
+
 .topinfo{
     display: flex;
 }
+
+/* Styl dla OSP oraz niektóre dla spana Skowroda Południowa */
+
+
 .toptext {
     color: red;
     font-family: 'PT Sans', sans-serif;
@@ -92,9 +124,13 @@ img.banertopimg{
     transition: transform 1s;
   }
   
+
+/* Wjazd po włączeniu strony dla OSP Skowroda Południowa */
   .toptext.show {
     transform: translateX(0);
   }
+  
+
   
 .toptext .textskpo{
     color: black;
@@ -225,9 +261,19 @@ img.banertopimg{
         width: calc(100% + 10px);
     }
 }
-@media screen and (max-width: 1313px) {
+@media screen and (max-width: 1308px) {
     .menubutton {
       display: block;
+    }
+    .toptext{
+        width: 100vw;
+        left: 0;
+    }
+    .textskpo{
+        margin-bottom: 2rem;
+    }
+    .cytattop{
+        bottom: -12rem;
     }
     .logotext {
       margin-left: 10px;
@@ -279,9 +325,31 @@ img.banertopimg{
   
 
   
-@media screen and (max-width: 1824px){
-    .textskpo{
-        font-size: 10px;
+@media screen and (max-width: 500px){
+    /* body{
+        overflow-x: hidden;
+    } */
+    img.banertopimg{
+        width: 130%;
+        height: auto;
+        overflow: hidden;
+        left: -8rem;
+    }
+    .cytattop{
+        margin-bottom: 20rem;
+    }
+    .toptext{
+        margin-top: 18rem;
+    }
+    ul{
+        height: 100vh;
+        z-index: 10;
+    }
+    ul li{
+        width: ;
+    }
+    .aboutus{
+        margin-top: 13rem;
     }
 }
 .test:hover {
