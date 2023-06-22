@@ -12,7 +12,7 @@
     <header>
         <img class="logoimg" src="logo.png" alt="firefighter-logo">
         <div class="logotext">OSP Skowroda Południowa</div>
-        <div class="menubutton"><img src="menu.svg" alt="menuimg"></div>
+
         <ul class="ul">
             <li class="menuitems" id="aboutusbuttonmenu">O OSP 
                 <div class="submenu">
@@ -50,7 +50,7 @@
                 </div>
             </li>
         </ul>
-        
+        <div class="menubutton"><img src="menu.svg" alt="menuimg"></div>
     </header>
 <div class="topinfo">
     <img src="banertop.png" alt="banertop" class="banertopimg">
@@ -65,43 +65,44 @@
     </section>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <button type="button" class="test">test</button>
+
+
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      window.addEventListener('load', function() {
-        // Znajdź element, który chcesz animować
-        var element = document.querySelector('.toptext');
-        var cytat = document.querySelector('.cytattop');
-  
-        // Dodaj klasę .show, aby uruchomić animację
-        element.classList.add('show');
-        cytat.classList.add('showcytattop');
-      });
-  
-      var aboutusbuttonmenu = document.querySelector('#aboutusbuttonmenu');
-  
-      aboutusbuttonmenu.addEventListener("click", function() {
-        var aboutussection = document.querySelector('#aboutus');
-        aboutussection.scrollIntoView({ behavior: "smooth" });
-      });
-  
-    //   let burger = document.querySelector(".menubutton");
-    //   let menu = document.querySelector("ul");
-  
-    //   burger.addEventListener("click", function() {
-    //     if (menu.style.display === "none") {
-    //       menu.style.display = "flex";
-    //     } else {
-    //       menu.style.display = "none";
-    //     }
-    //   });
-  
-    //   document.addEventListener("click", function(event) {
-    //     if (!event.target.closest("ul")&& ("burger")) {
-    //       menu.style.display = "none";
-    //     }
-    //   });
-    // });
+document.addEventListener("DOMContentLoaded", function() {
+  window.addEventListener('load', function() {
+    var element = document.querySelector('.toptext');
+    var cytat = document.querySelector('.cytattop');
+
+    element.classList.add('show');
+    cytat.classList.add('showcytattop');
+  });
+
+  var aboutusbuttonmenu = document.querySelector('#aboutusbuttonmenu');
+
+  aboutusbuttonmenu.addEventListener("click", function() {
+    var aboutussection = document.querySelector('#aboutus');
+    aboutussection.scrollIntoView({ behavior: "smooth" });
+  });
+
+  let burger = document.querySelector(".menubutton");
+  let menu = document.querySelector("ul");
+
+  burger.addEventListener("click", function() {
+    menu.classList.toggle("show-menu");
+    burger.classList.toggle("active");
+  });
+
+  let menuItems = document.querySelectorAll("li");
+  menuItems.forEach(function(menuItem) {
+    menuItem.addEventListener("click", function() {
+      menu.classList.remove("show-menu");
+      burger.classList.remove("active");
+    });
+  });
+});
+
   </script>
+  
   
 
       
