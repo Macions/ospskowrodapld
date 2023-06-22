@@ -12,6 +12,7 @@ header{
     font-family: 'Ubuntu', sans-serif;
     align-items: center;
 }
+
 .logoimg{
     height: 90px;
     width: 90px;
@@ -26,9 +27,9 @@ header{
     content: "";
     position: absolute;
     width: 2px;
-    height: 100%;
+    height: 190%;
     background-color: white;
-    top: 0;
+    top: -10PX;
     right: -20px;
 }
 
@@ -87,17 +88,11 @@ img.banertopimg{
     z-index: 1;
     flex-direction: column;
     gap: 15px;
-    transform: translateX(-100%);
-    transition: transform 1s;
-  }
-  
-  .toptext.show {
-    transform: translateX(0);
-  }
+}
   
 .toptext .textskpo{
     color: black;
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 400;
 }
 
@@ -111,17 +106,10 @@ img.banertopimg{
     text-align: center;
     z-index: 1;
     margin-top: 30px;
-    transform: translateY(500%);
-    opacity: 0;
-    transition: opacity 1s, transform 1s;
     transition-delay: .3s;
+    transform: skew(-10deg, 0);
 }
 
-.cytattop.showcytattop{
-    transform: translateY(0) ;
-    transform: skew(-20deg, 0);
-    opacity: 1;
-}
 .aboutus{
     margin-top: 25vw;
 }
@@ -143,8 +131,136 @@ img.banertopimg{
     transform: translateX(-50%);
     border-radius: 100px;
 }
-@media screen and (max-width: 1900px){
-    body{
-        background-color: black;
+.menubutton{
+    display: none;
+}
+@media screen and (max-width: 1750px){
+    .logotext::before {
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 100%;
+        background-color: white;
+        top: 0;
+        right: 90px;
+    }
+}
+@media screen and (max-width: 1322px){
+    .logotext::before{
+        display: none;
+    }
+    img.banertopimg{
+        width: 100%;
+        height: auto;
+        position: absolute; 
+        right: 80px;
+    }
+    .topinfo {
+        flex-direction: column;
+        align-items: center;
+    }
+    .toptext{
+        font-size: 130px;
+        margin-top: 38rem;
+        justify-content: center;
+    }
+    .textskpo{
+        font-size: 200px;
+    }
+    .cytattop{
+        position: absolute;
+        left: auto;
+        right: auto;
+        bottom: -14%;
+        box-shadow: 0px 0px 2px red;
+        padding: 20px 0px;
+        font-size: 40px;
+        font-family: 'Josefin Sans', sans-serif;
+        width: 87.3%;
+        text-align: center;
+        z-index: 1;
+        margin-top: 100rem;
+    }
+    .logotext{
+        text-align: center;
+        margin-left: -15px;
+        font-weight: 500;
+    }
+    
+    .cytattop.showcytattop{
+        transform: skew(-15deg, 0);
+    }
+    li.menuitems::before {
+        content: "";
+        position: absolute;
+        width: 0; /* Dodano calc(100% + 10px) dla szerokości */
+        transform: translateX(-50%);
+        height: 2px;
+        background-color: white;
+        bottom: -10px;
+        left: 50%;
+        right: auto; /* Usunięto right: 50% */
+        margin-left: -calc((100% + 10px) / 2); /* Dodano margines w lewo obliczony na podstawie szerokości */
+        transform-origin: center; /* Dodano transform-origin na center */
+        transition-duration: .4s;
+      }
+      
+    li.menuitems:hover::before{
+        width: calc(100% + 10px);
+    }
+}
+@media screen and (max-width: 1313px) {
+    .menubutton {
+      display: block;
+    }
+    .logotext {
+      margin-left: 10px;
+    }
+
+    .cytattop{
+        bottom: -20%;
+    }
+    .menubutton img:hover{
+        transform: rotate(0deg);
+    }
+    .menubutton img {
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      position: absolute;
+      right: 20px;
+      top: 30px;
+      transition-duration: 0.3s;
+    }
+
+    
+    header ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      right: 0;
+      top: 90px;
+      border-bottom: 1px solid white;
+      border-left: 1px solid white;
+      border-right: 1px solid white;
+      background-color: black;
+      z-index: 1;
+      width: 30%;
+      padding: 50px 0px;
+      gap: 45px;
+
+    }
+    
+    li.menuitems:hover::before {
+      width: calc(100% - 90px);
+    }
+  }
+  
+  
+
+  
+@media screen and (max-width: 1824px){
+    .textskpo{
+        font-size: 10px;
     }
 }
