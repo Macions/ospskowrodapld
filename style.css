@@ -161,13 +161,15 @@ img.banertopimg{
 }
 .aboutus{
     margin-top: 25vw;
+
 }
 .aboutustoptitle{
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
-    font-size: 60px;
+    font-size: 70px;
     font-weight: 500;
     position: relative;
+    margin-bottom: 60px;
 }
 .aboutustoptitle::before {
     content: "";
@@ -180,6 +182,31 @@ img.banertopimg{
     transform: translateX(-50%);
     border-radius: 100px;
 }
+
+.aboutus .textleft {
+    margin-left: 40px;
+    box-shadow: 0 0 10px 5px rgba(255, 108, 108, 0.3);
+    width: 50vw;
+    padding: 30px;
+    font-size: 22px;
+    font-family: 'PT Sans', sans-serif;
+    margin-top: 30px;
+    border-radius: 30px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .aboutus .imgright {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .aboutus .imgright img {
+    width: 30vw;
+    height: auto;
+    margin: 0px auto; /* Dodaj marginesy, aby wycentrować obrazek */
+  }
+  
 .menubutton{
     display: none;
 }
