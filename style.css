@@ -371,6 +371,47 @@ img.banertopimg{
     border-radius: 100px;
 }
 
+.members .members_members .leftsidemember {
+  /* border: 1px solid black; */
+  padding-left: 10rem;
+  display: flex;
+  align-items: center; /* Centrowanie w pionie obrazka, membername i memberrole */
+}
+
+.leftsidemember img {
+  margin-right: 3rem; /* Odstęp między obrazkiem a membername */
+  border-radius: 100%;
+  width: 350px;
+  height: 350px;
+}
+.leftsidemember .data .membername{
+  font-size: 45px;
+  margin-top: -3rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+}
+.leftsidemember .data .memberrole{
+  font-size: 27px;
+  margin-top: 7px;
+  transform: skewX(-13deg);
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+.leftsidemember .data .membernumberphone img{
+  border-radius: 0;
+  width: 30px;
+  vertical-align: middle;
+  display: flex;
+  margin-right: 5px;
+}
+.leftsidemember .data .membernumberphone{
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+  color: darkblue;
+  font-weight: 500;
+  font-family: 'Ubuntu', sans-serif;
+}
 
 
 .menubutton{
