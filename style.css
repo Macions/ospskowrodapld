@@ -131,13 +131,15 @@ img.banertopimg{
     transform: translateX(0);
   }
   
-
+/* Tekst na górze po menu oraz cytat */
   
 .toptext .textskpo{
     color: black;
     font-size: 50px;
     font-weight: 400;
 }
+
+/* Style dla cytatu */
 
 .cytattop {
     position: absolute;
@@ -155,16 +157,25 @@ img.banertopimg{
     transition-delay: .3s;
 }
 
+
+/* Animacja wejścia dla cytatu */
+
 .cytattop.showcytattop{
     transform: translateY(0) ;
     transform: skew(-20deg, 0);
     opacity: 1;
 }
+
+/* Style globalne dla skecji o nas */
+
 .aboutus{
     margin-top: 25vw;
-    /* border: 1px solid black; */
     border-radius: 40px;
 }
+
+
+/* Styl dla tytułu sekcji o nas */
+
 .aboutustoptitle{
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
@@ -173,6 +184,10 @@ img.banertopimg{
     position: relative;
     margin-bottom: 120px;
 }
+
+/* Styl dla pseudoelementu który jest kreską pod tytułem sekcji o nas */
+
+
 .aboutustoptitle::before {
     content: "";
     position: absolute;
@@ -184,6 +199,10 @@ img.banertopimg{
     transform: translateX(-50%);
     border-radius: 100px;
 }
+
+
+/* Teskt dla skecji o nas znajdujący się po lewej stronie */
+
 
 .aboutus .textleft {
     margin-left: 40px;
@@ -200,31 +219,37 @@ img.banertopimg{
   }
 
   
+/* Styl dla sekcji o nas dla zdjęcia znajdującego się po prawej stronie */
+
+
   .aboutus .imgright {
     display: inline-block;
     vertical-align: middle;
 
   }
 
+
+/* Styl dla zdjęcia w sekcji o nas */
+
   
   .aboutus .imgright img {
     width: 37vw;
     height: auto;
     margin-left: 160px;
-    /* margin: 0px; Dodaj marginesy, aby wycentrować obrazek */
     box-shadow: 0px 0px 3px black;
     border-radius: 10%;
     opacity: 50%;
     transition-duration: .3s;
   }
+
+/* Styl dla obrazka w sekcji o nas po najechaniu */
+
   .aboutus .imgright img:hover{
     opacity: 100%;
   }
 
 
-
-
-
+  /* Styl globalny dla skecji działalność */
 
 
   .ouractivity{
@@ -234,6 +259,10 @@ img.banertopimg{
     padding-bottom: 100px;
     position: relative;
 }
+
+
+/* Styl dla kreski znajdującej się na górze po lewej stronie */
+
   .ouractivity .lineone{
     position: absolute;
     top: 7.5rem;
@@ -245,6 +274,11 @@ img.banertopimg{
     border-radius: 100px;
     opacity: 30%;
   }
+
+
+/* Styl dla kreski znajdującej się na dole po prawo w sekcji działalność */
+
+
   .ouractivity .linetwo{
     position: absolute;
     bottom: 1rem;
@@ -257,6 +291,9 @@ img.banertopimg{
     opacity: 30%;
   } 
   
+/* Styl dla małej kreski po lewej stronie na górze */
+
+
   .ouractivity .smalllineone{
     position: absolute;
     top: 8.5rem;
@@ -268,6 +305,10 @@ img.banertopimg{
     border-radius: 100px;
     opacity: 30%;
   }
+
+  /* Styl dla małej kreski po prawej stronie na dole */
+
+
   .ouractivity .smalllinetwo{
     position: absolute;
     bottom: 1.5rem;
@@ -281,7 +322,7 @@ img.banertopimg{
   }
 
 
-
+/* Tekst główny w sekcji działaność */
 
 
   
@@ -295,6 +336,9 @@ img.banertopimg{
 }
 
 
+
+/* Kreska pod głównym teskstem w sekcji działaność */
+
 .ouractivity .text::before {
     content: "";
     position: absolute;
@@ -306,6 +350,10 @@ img.banertopimg{
     transform: translateX(-50%);
     border-radius: 100px;
 }
+
+
+/* Tekst znajdujący się po prawej stronie w sekcji działaność */
+
 
 .ouractivity .description {
     margin-left: 80px;
@@ -319,37 +367,48 @@ img.banertopimg{
     display: inline-block;
     vertical-align: middle;
     text-align: right;
-
   }
+
+/* Style dla obrazka po lewej stronie w sekcji działalność */
+
   .ouractivity .imgleft {
     display: inline-block;
     vertical-align: middle;
   }
+
+
+  /* Style dla obrazka po lewej stronie w sekcji działalność */
 
   
   .ouractivity .imgleft img {
     width: 28vw;
     height: auto;
     margin-left: 160px;
-    /* margin: 0px; Dodaj marginesy, aby wycentrować obrazek */
-    /* box-shadow: 0px 0px 3px black; */
     border-radius: 10%;
     opacity: 50%;
     transition-duration: .3s;
   }
+
+/* Animacja po najechaniu na obrazek w skecji działaność */
+
   .ouractivity .imgleft img:hover{
     opacity: 100%;
   }
 
 
+/* Styl globalny dal sekcji członkowie */
 
-    .members{
-    margin-top: 10vw;
-    /* border: 1px solid black; */
-    border-radius: 40px;
-    padding-bottom: 100px;
-    position: relative;
+
+.members{
+  margin-top: 10vw;
+  /* border: 1px solid black; */
+  border-radius: 40px;
+  padding-bottom: 100px;
+  position: relative;
 }
+
+
+/* Tekst dla tekstu głównego w sekcji członkowie */
 
 .members .text{
     font-family: 'Ubuntu', sans-serif;
@@ -359,6 +418,11 @@ img.banertopimg{
     position: relative;
     margin-bottom: 120px;
 }
+
+
+/* Styl dla kreski pod głównym napisem w sekcji członkowie */
+
+
 .members .text::before {
     content: "";
     position: absolute;
@@ -371,25 +435,48 @@ img.banertopimg{
     border-radius: 100px;
 }
 
+
+/* Style dla członków znajdujących się po lewej stronie */
+
+
 .members .members_members .leftsidemember {
-  /* border: 1px solid black; */
   padding-left: 10rem;
   display: flex;
   align-items: center; 
   justify-content: left;
+  transition-duration: .5s;
 }
 
+
+/* Styl dla sekcji leftsidemember po najechaniu (dla sekcji w której znajdują się użytkownicy po leqwej streonie) */
+
+
+.members .members_members .leftsidemember:hover{
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.155);
+  border-radius: 50px;
+  margin: 0px 10px;
+  padding: 10px 0px;
+}
+
+/* Styl dla zdjęcia po lewej stronie */
+
 .leftsidemember img {
-  margin-right: 3rem; /* Odstęp między obrazkiem a membername */
+  margin-right: 3rem; 
   border-radius: 100%;
   width: 350px;
   height: 350px;
   opacity: 20%;
   transition-duration: .3s;
 }
+
+/* Styl dal zdjecia po lewej stronie po najechaniu */
+
 .leftsidemember img:hover{
   opacity: 1;
 }
+
+/* Styl dla nazwy użytkownika po lewej stronie */
+
 
 .leftsidemember .data .membername{
   font-size: 45px;
@@ -397,6 +484,9 @@ img.banertopimg{
   font-family: 'Ubuntu', sans-serif;
   font-weight: 500;
 }
+
+/* Styl dla roli członka po lewej stronie */
+
 .leftsidemember .data .memberrole{
   font-size: 27px;
   margin-top: 7px;
@@ -404,6 +494,9 @@ img.banertopimg{
   margin-left: 5rem;
   font-family: 'Ubuntu', sans-serif;
 }
+
+/* Styl dla obrazka numeru telefonu dla użytkownika po lewej stronie */
+
 .leftsidemember .data .membernumberphone img{
   border-radius: 0;
   width: 30px;
@@ -413,6 +506,8 @@ img.banertopimg{
   height: auto;
   opacity: 1;
 }
+
+Styl dla zdjęcia
 
 .leftsidemember .data .membernumberphone img,
 .leftsidemember .data .membernumberphone{
@@ -466,6 +561,14 @@ img.banertopimg{
   display: flex;
   align-items: center; 
   justify-content: right;
+  transition-duration: .5s;
+}
+
+.members .members_members .rightsidemember:hover{
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.155);
+  border-radius: 50px;
+  margin: 4px 10px;
+  padding: 10px 0px;
 }
 
 .rightsidemember img {
@@ -493,6 +596,11 @@ img.banertopimg{
   margin-left: 5rem;
   font-family: 'Ubuntu', sans-serif;
 }
+
+.rightsidemember .data .memberrole .zasnacz{
+  margin-left: -4rem;
+}
+
 .rightsidemember .data .membernumberphone img{
   border-radius: 0;
   width: 30px;
@@ -546,15 +654,14 @@ img.banertopimg{
 .squredots img{
   position: absolute;
   width: 20%;
-  z-index: -100;
+  /* z-index: -100; */
   opacity: 30%;
   filter: blur(3px);
-  margin-top: -18rem;
-  transition: transform 1s;
   margin-top: -25rem;
-  animation: rotate 8s infinite linear;
+  transition-duration: .5s;
 }
 .squredots {
+  position: relative; /* Dodaj ten styl, aby umieścić elementy wewnątrz */
   display: flex;
   justify-content: flex-end;
   margin-right: 13rem;
@@ -562,16 +669,23 @@ img.banertopimg{
 }
 
 
+.squredots:hover img{
+  opacity: 1;
+  filter: blur(0px);
+  border-radius: 100px;
+  transform: scale(1.2);
+}
+
+
 .squredots2 img{
   position: absolute;
   width: 17%;
-  z-index: -100;
+  /* z-index: -100; */
   opacity: 30%;
   filter: blur(3px);
   margin-top: -18rem;
-  transition: transform 1s;
   margin-top: -22rem;
-  animation: rotate 8s infinite linear;
+  transition-duration: .5s;
 }
 .squredots2 {
   display: flex;
@@ -579,17 +693,115 @@ img.banertopimg{
   margin-left: 32rem;
 
 }
-.squredots3{
-  background-color: black;
+
+.squredots2:hover img{
+  opacity: 1;
+  filter: blur(0px);
+  border-radius: 100px;
+  transform: scale(1.2);
+}
+
+.squredots3 img{
+  position: absolute;
+  width: 20%;
+  /* z-index: -100; */
+  opacity: 30%;
+  filter: blur(3px);
+  margin-top: -18rem;
+  margin-top: -21rem;
+  transition-duration: .5s;
+}
+.squredots3 {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 13rem;
+
+}
+
+.squredots3:hover img{
+  opacity: 1;
+  filter: blur(0px);
+  border-radius: 100px;
+  transform: scale(1.05);
+}
+
+.squredots4 img{
+  position: absolute;
+  width: 17%;
+  /* z-index: -100; */
+  opacity: 30%;
+  filter: blur(3px);
+  margin-top: -18rem;
+  margin-top: -22rem;
+  transition-duration: .5s;
+}
+.squredots4 {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 32rem;
+
+}
+
+
+.squredots4:hover img{
+  opacity: 1;
+  filter: blur(0px);
+  border-radius: 50px;
+  transform: scale(1.2);
+}
+
+
+.squredots5 img{
+  position: absolute;
+  width: 18%;
+  /* z-index: -100; */
+  opacity: 30%;
+  filter: blur(3px);
+  margin-top: -18rem;
+  margin-top: -21rem;
+  transition-duration: .5s;
+}
+.squredots5 {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 16rem;
+
 }
 
 
 
 
+.squredots5:hover img{
+  opacity: 1;
+  filter: blur(0px);
+  border-radius: 100px;
+  transform: scale(1.07);
+}
 
 
+.squredots6 img{
+  position: absolute;
+  width: 17%;
+  /* z-index: -100; */
+  opacity: 30%;
+  filter: blur(3px);
+  margin-top: -18rem;
+  margin-top: -22rem;
+  transition-duration: .5s;
+}
+.squredots6 {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 32rem;
 
+}
 
+.squredots6:hover img{
+  opacity: 1;
+  filter: blur(0px);
+  border-radius: 100px;
+  transform: scale(1.2);
+}
 
 .menubutton{
     display: none;
