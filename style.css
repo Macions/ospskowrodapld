@@ -575,9 +575,12 @@ img.banertopimg{
 }
 .squredots2 {
   display: flex;
-  justify-content: flex-end;
-  margin-right: 32rem;
+  justify-content: flex-start;
+  margin-left: 32rem;
 
+}
+.squredots3{
+  background-color: black;
 }
 
 
