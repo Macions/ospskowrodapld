@@ -25,7 +25,7 @@
                     <div class="submenuitems"></div>
                 </div>
             </li>
-            <li class="menuitems">Członkowie OSP
+            <li class="menuitems" id="membersbuttonmenu">Członkowie OSP
                 <div class="submenu">
                     <div class="submenuitems"></div>
                 </div>
@@ -193,6 +193,71 @@ Sunt aliqua nisi nulla id. Minim elit veniam ullamco consequat dolor ut fugiat l
 </section>
 
 
+<!--                            Sekcja Aktualności                     -->
+
+
+
+<section id="news" class="news">
+
+    <div class="text">Aktualności</div>
+
+    <div class="news-container">
+        <div class="newss">
+          <div class="news-frame">
+            <img class="news-image" src="squredots2.png" alt="News 1">
+            <a href="news.html" style="text-decoration: none; color: inherit;">
+                <h2 class="news-title">Zawody sportowo-pożarnicze</h2>
+              </a>
+              
+            <p class="news-subtitle">Zawody sportowo-pożarnicze w gminie Chąśnie</p>
+          </div>
+        </div>
+    
+        <div class="newss">
+          <div class="news-frame">
+            <img class="news-image" src="squredots2.png" alt="News 2">
+            <h2 class="news-title">Pokaz Ratownictwa</h2>
+            <p class="news-subtitle">Demonstracja umiejętności i sprzętu strażackiego</p>
+          </div>
+        </div>
+    
+        <div class="newss">
+          <div class="news-frame">
+            <img class="news-image" src="squredots2.png" alt="News 3">
+            <h2 class="news-title">Turniej Sztuki Gaśniczej</h2>
+            <p class="news-subtitle">Konkurs na najefektowniejszą technikę gaśniczą</p>
+          </div>
+        </div>
+    
+        <div class="newss">
+          <div class="news-frame">
+            <img class="news-image" src="squredots2.png" alt="News 4">
+            <h2 class="news-title">Dzień Otwarty Straży Pożarnej</h2>
+            <p class="news-subtitle">Zapraszamy na spotkanie z bohaterami i pokazy strażackie</p>
+          </div>
+        </div>
+    
+    
+    
+    
+        
+        <!-- Dodaj więcej newsów w tej samej strukturze -->
+    
+      </div>
+
+
+
+
+</section>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
 
 
 
@@ -208,6 +273,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   var aboutusbuttonmenu = document.querySelector('#aboutusbuttonmenu');
   var ouractivity = document.querySelector('#ouractivitybttonmenu');
+  var members = document.querySelector('#membersbuttonmenu');
 
   ouractivity.addEventListener("click", function() {
     var ouractivitysection = document.querySelector('#ouractivity');
@@ -218,6 +284,12 @@ document.addEventListener("DOMContentLoaded", function() {
     var aboutussection = document.querySelector('#aboutus');
     aboutussection.scrollIntoView({ behavior: "smooth" });
   });
+
+  members.addEventListener("click", function() {
+    var memberssection = document.querySelector('#members');
+    memberssection.scrollIntoView({ behavior: "smooth" });
+  });
+  
 
   let burger = document.querySelector(".menubutton");
   let menu = document.querySelector("ul");

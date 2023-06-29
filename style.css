@@ -454,8 +454,10 @@ img.banertopimg{
 .members .members_members .leftsidemember:hover{
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.155);
   border-radius: 50px;
-  margin: 0px 10px;
-  padding: 10px 0px;
+  padding-top: 20px;
+  margin-top: 20px; 
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 /* Styl dla zdjęcia po lewej stronie */
@@ -507,15 +509,19 @@ img.banertopimg{
   opacity: 1;
 }
 
-Styl dla zdjęcia
+/* Styl dla zdjęcia telefonu oraz numeru telefonu */
+
 
 .leftsidemember .data .membernumberphone img,
 .leftsidemember .data .membernumberphone{
   display: inline-block;
   margin-right: 20px;
-
-  
 }
+
+
+/* Style dla numeru telefonu w sekcji członkowie dla lewej strony */
+
+
 .leftsidemember .data .membernumberphone{
   text-align: center;
   margin-top: 30px;
@@ -524,6 +530,11 @@ Styl dla zdjęcia
   font-weight: 500;
   font-family: 'Ubuntu', sans-serif;
 }
+
+
+/* Styl dla obrazka maila w sekcji członkowie po lewej stronie */
+
+
 .leftsidemember .data .memberemailadress img{
   border-radius: 0;
   width: 30px;
@@ -534,12 +545,20 @@ Styl dla zdjęcia
   opacity: 1;
 }
 
+
+/* Style dla obrazka maila oraz maila w sekcji członkowie po lewej stronie */
+
+
 .leftsidemember .data .memberemailadress img,
 .leftsidemember .data .memberemailadress{
   display: inline-block;
   margin-right: 20px;
-  
 }
+
+
+/* Styl dla adresu email w sekcji członkowie po lewej stronie */
+
+
 .leftsidemember .data .memberemailadress{
   text-align: center;
   margin-top: 30px;
@@ -551,12 +570,11 @@ Styl dla zdjęcia
 
 
 
-
+/* Style globalne dla prawej strony w sekcji członkowie */
 
 
 
 .members .members_members .rightsidemember {
-  /* border: 1px solid black; */
   padding-right: 10rem;
   display: flex;
   align-items: center; 
@@ -564,12 +582,22 @@ Styl dla zdjęcia
   transition-duration: .5s;
 }
 
+
+/* Style globalne dla prawej strony w sekcji członkowie po najechaniu */
+
+
 .members .members_members .rightsidemember:hover{
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.155);
   border-radius: 50px;
-  margin: 4px 10px;
-  padding: 10px 0px;
+  padding-top: 20px;
+  margin-top: 20px; 
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
+
+
+/* Style dla zdjęcia członka z prawej strony w sekcji członkowie */
+
 
 .rightsidemember img {
   margin-right: 3rem; /* Odstęp między obrazkiem a membername */
@@ -579,9 +607,18 @@ Styl dla zdjęcia
   opacity: 20%;
   transition-duration: .3s;
 }
+
+
+/* Styl dla zdjęcia członka po najechaniu w sekcji członkowie */
+
+
 .rightsidemember img:hover{
   opacity: 1;
 }
+
+
+/* Styl dla nazwy członka w sekcji członkowie */
+
 
 .rightsidemember .data .membername{
   font-size: 45px;
@@ -589,6 +626,11 @@ Styl dla zdjęcia
   font-family: 'Ubuntu', sans-serif;
   font-weight: 500;
 }
+
+
+/* Styl dla roli członka po prawej stronie w sekcji członkowie */
+
+
 .rightsidemember .data .memberrole{
   font-size: 27px;
   margin-top: 7px;
@@ -597,9 +639,17 @@ Styl dla zdjęcia
   font-family: 'Ubuntu', sans-serif;
 }
 
+
+/* Styl dla zastępcy naczelnika w sekcji członkowie z prawej stronie */
+
+
 .rightsidemember .data .memberrole .zasnacz{
   margin-left: -4rem;
 }
+
+
+/* Styl dla obrazka telefonu z prawej strony w sekcji członkowie */
+
 
 .rightsidemember .data .membernumberphone img{
   border-radius: 0;
@@ -611,13 +661,20 @@ Styl dla zdjęcia
   opacity: 1;
 }
 
+
+/* Style dla obrazka telefonu oraz telefonu z prawej strony w sekcji członkowie */
+
+
 .rightsidemember .data .membernumberphone img,
 .rightsidemember .data .membernumberphone{
   display: inline-block;
   margin-right: 20px;
-
-  
 }
+
+
+/* Styl dla numeru telefonu z prawej strony w sekcji członkowie */
+
+
 .rightsidemember .data .membernumberphone{
   text-align: center;
   margin-top: 30px;
@@ -626,6 +683,11 @@ Styl dla zdjęcia
   font-weight: 500;
   font-family: 'Ubuntu', sans-serif;
 }
+
+
+/* Styl dla obrazka maila z prawej strony w sekcji członkowie */
+
+
 .rightsidemember .data .memberemailadress img{
   border-radius: 0;
   width: 30px;
@@ -636,12 +698,20 @@ Styl dla zdjęcia
   opacity: 1;
 }
 
+
+/* Style dla obrazka maila oraz adresu email członka z prawej strony w sekcji członkowie */
+
+
 .rightsidemember .data .memberemailadress img,
 .rightsidemember .data .memberemailadress{
   display: inline-block;
   margin-right: 20px;
-  
 }
+
+
+/* Styl dla adresu email członka z prawej strony w sekcji członkowie */
+
+
 .rightsidemember .data .memberemailadress{
   text-align: center;
   margin-top: 30px;
@@ -650,6 +720,10 @@ Styl dla zdjęcia
   font-weight: 500;
   font-family: 'Ubuntu', sans-serif;
 }
+
+
+/* Style dla pierwszego obrazka z prawej strony w sekcji członkowie */
+
 
 .squredots img{
   position: absolute;
@@ -660,6 +734,8 @@ Styl dla zdjęcia
   margin-top: -25rem;
   transition-duration: .5s;
 }
+
+
 .squredots {
   position: relative; /* Dodaj ten styl, aby umieścić elementy wewnątrz */
   display: flex;
@@ -668,6 +744,7 @@ Styl dla zdjęcia
 
 }
 
+/* Style dla pierwszego obrazka po najechaniu */
 
 .squredots:hover img{
   opacity: 1;
@@ -675,6 +752,10 @@ Styl dla zdjęcia
   border-radius: 100px;
   transform: scale(1.2);
 }
+
+
+
+/* Styl dla drugiego obrazka z lewej strony w sekcji członkowie */
 
 
 .squredots2 img{
@@ -694,12 +775,19 @@ Styl dla zdjęcia
 
 }
 
+
+/* Styl dla drugiego obrazka po najechaniu z lewej strony w sekcji członkowie  */
+
 .squredots2:hover img{
   opacity: 1;
   filter: blur(0px);
   border-radius: 100px;
   transform: scale(1.2);
 }
+
+
+/* Styl dla trzeciego obrazka z prawej strony w sekcji członkowie */
+
 
 .squredots3 img{
   position: absolute;
@@ -718,12 +806,20 @@ Styl dla zdjęcia
 
 }
 
+
+/* Styl dla obrazka trzeciego po najechaniu z prawej strony w sekcji członkowie */
+
+
 .squredots3:hover img{
   opacity: 1;
   filter: blur(0px);
   border-radius: 100px;
   transform: scale(1.05);
 }
+
+
+/* Styl dla czwartego obrazka z lewej strony w sekcji członkowie */
+
 
 .squredots4 img{
   position: absolute;
@@ -743,6 +839,8 @@ Styl dla zdjęcia
 }
 
 
+/* Styl dla czwartego obrazka z lewej strony w sekcji członkowie */
+
 .squredots4:hover img{
   opacity: 1;
   filter: blur(0px);
@@ -750,6 +848,8 @@ Styl dla zdjęcia
   transform: scale(1.2);
 }
 
+
+/* Styl dla piątego obrazka z prawej strony w sekcji członkowie */
 
 .squredots5 img{
   position: absolute;
@@ -769,6 +869,7 @@ Styl dla zdjęcia
 }
 
 
+/* Styl dla piątego obrazka z prawej strony w sekcji członkowie po najechaniu */
 
 
 .squredots5:hover img{
@@ -777,6 +878,9 @@ Styl dla zdjęcia
   border-radius: 100px;
   transform: scale(1.07);
 }
+
+
+/* Styl dla szóstego obrazka z lewej strony w sekcji członkowie */
 
 
 .squredots6 img{
@@ -796,6 +900,10 @@ Styl dla zdjęcia
 
 }
 
+
+/* Styl dla szóstego obraka z lewej strony w sekcji członkowie po najechaniu */
+
+
 .squredots6:hover img{
   opacity: 1;
   filter: blur(0px);
@@ -803,9 +911,122 @@ Styl dla zdjęcia
   transform: scale(1.2);
 }
 
-.menubutton{
-    display: none;
+
+
+
+/* Tekst dla tekstu głównego w sekcji aktualności */
+
+.news .text{
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  font-size: 70px;
+  font-weight: 500;
+  position: relative;
+  margin-bottom: 120px;
+  margin-top: 50px;
 }
+
+
+/* Styl dla kreski pod głównym napisem w sekcji aktualności */
+
+
+.news .text::before {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  width: 50%;
+  height: 3px;
+  background-color: black;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 100px;
+}
+
+
+.news-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.newss {
+  width: 19%;
+  margin-bottom: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 0px 50px;
+}
+
+.news-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.397);
+  border-radius: 20px;
+  padding: 10px;
+  padding-bottom: 30px;
+  transition-duration: .4s;
+}
+
+.news-frame:hover{
+  box-shadow: 0px 0px 30px rgba(0, 0, 255, 0.673);
+
+}
+
+.news-image {
+  width: 160px;
+  border-radius: 50%;
+}
+
+.news-title {
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  cursor: pointer;
+}
+
+.news-subtitle {
+  margin-top: 30px;
+  font-size: 20px;
+  text-align: center;
+  color: #888888;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.menubutton{
+  display: none;
+}
+
+/* 
+------------------------
+------------------------
+------------------------
+
+
+
+Ustawienia dla ekranów o mniejszym rozmiarze
+
+
+
+------------------------
+------------------------
+------------------------
+ */
+
+
 @media screen and (max-width: 1750px){
     .logotext::before {
         content: "";
