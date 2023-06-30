@@ -1,90 +1,98 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Aktualności</title>
+  <title>Przykładowa Strona Kontaktu</title>
   <style>
-    .news-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+    /* CSS styles */
+
+    body {
+      font-family: Arial, sans-serif;
     }
 
-    .news {
-      width: 12%;
+    .contact {
+      text-align: center;
+    }
+
+    .text {
+      font-size: 24px;
+      font-weight: bold;
       margin-bottom: 20px;
-      padding: 10px;
-      box-sizing: border-box;
     }
 
-    .news-frame {
+    .contactdata {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin-top: 20px;
+    }
+
+    .contactmap {
+      flex-basis: 60%;
+      margin-right: 20px;
+    }
+
+    .contactinfo {
+      flex-basis: 40%;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.397);
-      border-radius: 20px;
-      padding: 10px;
+      align-items: flex-start;
     }
 
-    .news-image {
-      width: 160px;
-      border-radius: 50%;
-    }
-
-    .news-title {
-      margin-top: 10px;
-      font-size: 20px;
+    .contactphonetext,
+    .contactemailtext,
+    .contactadresstext {
       font-weight: bold;
-      text-align: center;
+      margin-bottom: 5px;
     }
 
-    .news-subtitle {
-      margin-top: 5px;
-      font-size: 14px;
-      text-align: center;
-      color: #888888;
+    .contactphonenumber,
+    .contactemailadress,
+    .contactadressadress {
+      font-size: 18px;
     }
+
+    .contactphonenumber:hover,
+    .contactemailadress:hover,
+    .contactadressadress:hover {
+      color: blue;
+    }
+
   </style>
 </head>
 <body>
-  <div class="news-container">
-    <div class="news">
-      <div class="news-frame">
-        <img class="news-image" src="squredots.png" alt="News 1">
-        <h2 class="news-title">Tytuł aktualności 1</h2>
-        <p class="news-subtitle">Podtytuł aktualności 1</p>
+  <section id="contact" class="contact">
+
+    <div class="text">Kontakt</div>
+
+    <div class="contactdata">
+      <div class="contactmap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2444.4622143852557!2d19.924979815796206!3d52.21681977975791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471bf1cc9aaed791%3A0x6dabfd529c702342!2sOSP%20Skowroda%20Po%C5%82udniowa!5e0!3m2!1spl!2spl!4v1688060319740!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <div class="contactinfo">
+        <div class="contactphone">
+          <div class="contactphonetext">Numer telefonu:</div>
+          <a href="tel:+48 123 456 789">
+            <div class="contactphonenumber">123 456 789</div>
+          </a>
+        </div>
+
+        <div class="contactemail">
+          <div class="contactemailtext">Email:</div>
+          <a href="mailto:example@example.pl">
+            <div class="contactemailadress">example@example.pl</div>
+          </a>
+        </div>
+
+        <div class="contactadress">
+          <div class="contactadresstext">Adres siedziby:</div>
+          <a href="https://www.google.com/maps?ll=52.21682,19.927169&z=16&t=m&hl=pl&gl=PL&mapclient=embed&cid=7902688502405407554" target="_blank">
+            <div class="contactadressadress">Skowroda Południowa 29</div>
+          </a>
+        </div>
       </div>
     </div>
 
-    <div class="news">
-      <div class="news-frame">
-        <img class="news-image" src="squredots2.png" alt="News 2">
-        <h2 class="news-title">Tytuł aktualności 2</h2>
-        <p class="news-subtitle">Podtytuł aktualności 2</p>
-      </div>
-    </div>
-
-    <div class="news">
-      <div class="news-frame">
-        <img class="news-image" src="red-exclamation-mark-.png" alt="News 3">
-        <h2 class="news-title">Tytuł aktualności 3</h2>
-        <p class="news-subtitle">Podtytuł aktualności 3</p>
-      </div>
-    </div>
-
-    <div class="news">
-      <div class="news-frame">
-        <img class="news-image" src="members4.jpg" alt="News 4">
-        <h2 class="news-title">Tytuł aktualności 4</h2>
-        <p class="news-subtitle">Podtytuł aktualności 4</p>
-      </div>
-    </div>
-
-
-
-
-    
-    <!-- Dodaj więcej newsów w tej samej strukturze -->
-
-  </div>
+  </section>
 </body>
 </html>

@@ -997,12 +997,158 @@ img.banertopimg{
 
 
 
+/* Tekst dla tekstu głównego w sekcji kontakt */
+
+.contact .text{
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  font-size: 70px;
+  font-weight: 500;
+  position: relative;
+  margin-bottom: 120px;
+  margin-top: 130px;
+}
+
+
+/* Styl dla kreski pod głównym napisem w sekcji kontakt */
+
+
+.contact .text::before {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  width: 50%;
+  height: 3px;
+  background-color: black;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 100px;
+}
+
+.contactcontact{
+  display: flex;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0px 10vw;
+  justify-content: center;
+}
+
+.contactdata{
+  padding-left: 40px;
+  padding-top: 10px;
+}
+
+.contactdata .contactphone .contactphonetext{
+  font-size: 30px;
+  align-items: center;
+  display: flex;
+  font-weight: 500;
+  position: relative;
+  margin-left: 60px;
+}
+
+.contactdata .contactphone img{
+  position: absolute;
+  margin-top: 25px;
+  width: 35px;
+}
+
+.contactdata .contactphone .contactphonetext::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 1px;
+  background-color: black;
+  height: 230%;
+  border-right: 1px dashed black;
+}
+
+
+.contactdata .contactphone .contactphonenumber{
+  font-size: 27px;
+  margin-top: 10px;
+  padding-left: 95px;
+}
+
+
+
+
+
+.contactdata .contactemail .contactemailtext{
+  font-size: 30px;
+  align-items: center;
+  display: flex;
+  font-weight: 500;
+  position: relative;
+  margin-left: 60px;
+  margin-top: 50px;
+}
+
+.contactdata .contactemail img{
+  position: absolute;
+  margin-top: 25px;
+  width: 35px;
+}
+
+.contactdata .contactemail .contactemailtext::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 1px;
+  background-color: black;
+  height: 230%;
+  border-right: 1px dashed black;
+}
+
+
+.contactdata .contactemail .contactemailadress{
+  font-size: 27px;
+  margin-top: 10px;
+  padding-left: 60px;
+}
 
 
 
 
 
 
+
+
+
+.contactdata .contactadress .contactadresstext{
+  font-size: 30px;
+  align-items: center;
+  display: flex;
+  font-weight: 500;
+  position: relative;
+  margin-left: 60px;
+  margin-top: 50px;
+}
+
+.contactdata .contactadress img{
+  position: absolute;
+  margin-top: 25px;
+  width: 35px;
+}
+
+.contactdata .contactadress .contactadresstext::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 1px;
+  background-color: black;
+  height: 230%;
+  border-right: 1px dashed black;
+}
+
+
+.contactdata .contactadress .contactadressadress{
+  font-size: 27px;
+  margin-top: 10px;
+  padding-left: 60px;
+}
 
 
 
@@ -1089,15 +1235,15 @@ Ustawienia dla ekranów o mniejszym rozmiarze
     li.menuitems::before {
         content: "";
         position: absolute;
-        width: 0; /* Dodano calc(100% + 10px) dla szerokości */
+        width: 0; 
         transform: translateX(-50%);
         height: 2px;
         background-color: white;
         bottom: -10px;
         left: 50%;
-        right: auto; /* Usunięto right: 50% */
-        margin-left: -calc((100% + 10px) / 2); /* Dodano margines w lewo obliczony na podstawie szerokości */
-        transform-origin: center; /* Dodano transform-origin na center */
+        right: auto; 
+        margin-left: -calc((100% + 10px) / 2); 
+        transform-origin: center; 
         transition-duration: .4s;
       }
       
@@ -1170,9 +1316,7 @@ Ustawienia dla ekranów o mniejszym rozmiarze
 
   
 @media screen and (max-width: 500px){
-    /* body{
-        overflow-x: hidden;
-    } */
+
     img.banertopimg{
         width: 130%;
         height: auto;
