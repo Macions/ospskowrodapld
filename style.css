@@ -1032,6 +1032,8 @@ img.banertopimg{
   justify-content: center;
 }
 
+
+
 .contactdata{
   padding-left: 40px;
   padding-top: 10px;
@@ -1111,7 +1113,9 @@ img.banertopimg{
 
 
 
-
+.contactdata .contactadress{
+  cursor: pointer;
+}
 
 
 
@@ -1144,10 +1148,199 @@ img.banertopimg{
 }
 
 
+.contactdata .contactadress .contactadresstext::after{
+  content: "?";
+  position: absolute;
+  font-size: 40px;
+  right: -30px;
+  top: 40%;
+  font-weight: 500;
+  color: red;
+  transition-duration: .2s;
+}
+
+
 .contactdata .contactadress .contactadressadress{
   font-size: 27px;
   margin-top: 10px;
   padding-left: 60px;
+}
+
+.contactdata .contactadress:hover .openstimes {
+  display: block;
+  opacity: 1;
+}
+
+.contactdata .contactadress:hover .contactadresstext::after{
+  scale: 0;
+  opacity: 0;
+  z-index: 10;
+}
+
+.openstimes {
+  font-family: 'Ubuntu', sans-serif;
+  position: absolute;
+  right: 10px;
+  box-shadow: 0px 0px 2px black;
+  border-radius: 5px;
+  width: 20vw;
+  height: 48vh;
+  display: none;
+  opacity: 0;
+  margin-top: -330px;
+  transition-property: opacity;
+  transition-duration: 1s;
+  cursor: default;
+}
+
+.openstimes:hover {
+  opacity: 1;
+}
+
+
+.openstimes::before {
+  content: "";
+  position: absolute;
+  left: -8%;
+  width: 60px;
+  border-left: 1px solid rgba(0, 0, 0, 0.280);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.280);
+  z-index: 1;
+  background-color: white;
+  height: 60px;
+  transform: rotate(45deg);
+  bottom: 7.5rem;
+}
+
+
+
+
+.openstimes .texttime{
+  font-size: 30px;
+  text-align: center;
+  padding-top: 10px;
+  font-weight: 600;
+  cursor: text;
+}
+
+.openstimes .hour{
+  font-size: 20px;
+  margin-top: 28px;
+  text-align: center;
+  cursor: text;
+}
+
+.openstimes .hour span{
+  font-weight: 500;
+  margin-right: 3px;
+}
+
+/* Tekst dla tekstu głównego w sekcji dokumenty */
+
+.documents .documentstext{
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  font-size: 70px;
+  font-weight: 500;
+  position: relative;
+  margin-bottom: 120px;
+  margin-top: 130px;
+}
+
+
+/* Styl dla kreski pod głównym napisem w sekcji dokumenty */
+
+
+.documents .documentstext::before {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  width: 50%;
+  height: 3px;
+  background-color: black;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 100px;
+}
+
+.documents .documentsitems .item1{
+  font-size: 22px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.documents .documentsitems .item2{
+  font-size: 22px;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 2rem;
+}
+
+
+.documents .documentsitems div{
+  text-align: center;
+}
+
+
+.documents .documentsitems a:hover{
+  color: black;
+  text-decoration: none;
+}
+.documents .documentsitems .item1 img,
+.documents .documentsitems .item2 img {
+  opacity: 0; /* Ukrywamy obrazek */
+  transition: opacity 0.3s; /* Dodajemy płynny efekt przejścia */
+}
+
+.documents .documentsitems .item1:hover img,
+.documents .documentsitems .item2:hover img {
+  opacity: 1; /* Po najechaniu obrazek staje się widoczny */
+}
+
+
+
+/* Tekst dla tekstu głównego w sekcji linki */
+
+.links .linkstext{
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  font-size: 70px;
+  font-weight: 500;
+  position: relative;
+  margin-bottom: 120px;
+  margin-top: 130px;
+}
+
+
+/* Styl dla kreski pod głównym napisem w sekcji linki */
+
+
+.links .linkstext::before {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  width: 50%;
+  height: 3px;
+  background-color: black;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 100px;
+}
+
+.links .linksitems{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.links .linksitems .link img{
+  width: 100px;
+  align-items: center;
+}
+
+
+
+.links .linksitems .link:nth-child(2) img{
+  width: 200px;
 }
 
 

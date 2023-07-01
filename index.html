@@ -30,22 +30,22 @@
                     <div class="submenuitems"></div>
                 </div>
             </li>
-            <li class="menuitems">Aktualności
+            <li class="menuitems" id="newsbuttonmenu">Aktualności
                 <div class="submenu">
                     <div class="submenuitems"></div>
                 </div>
             </li>
-            <li class="menuitems">Kontakt
+            <li class="menuitems" id="contactbuttonmenu">Kontakt
                 <div class="submenu">
                     <div class="submenuitems"></div>
                 </div>
             </li>
-            <li class="menuitems">Dokumenty
+            <li class="menuitems" id="documentsbuttonmenu">Dokumenty
                 <div class="submenu">
                     <div class="submenuitems"></div>
                 </div>
             </li>
-            <li class="menuitems">Linki
+            <li class="menuitems" id="linksbuttonmenu">Linki
                 <div class="submenu">
                     <div class="submenuitems"></div>
                 </div>
@@ -284,6 +284,18 @@ Sunt aliqua nisi nulla id. Minim elit veniam ullamco consequat dolor ut fugiat l
         <a href="https://www.google.com/maps?ll=52.21682,19.927169&z=16&t=m&hl=pl&gl=PL&mapclient=embed&cid=7902688502405407554" target="_blank">
           <div class="contactadressadress">Skowroda Południowa 29</div>
         </a>
+        <div class="openstimes">
+          <div class="texttime">Godziny otwarcia</div>
+            <div class="hours">
+              <div class="hour"><span> Poniedziałek: </span> 8.00 - 18.00</div>
+              <div class="hour"><span> Wtorek: </span> 8.00 - 18.00</div>
+              <div class="hour"><span> Środa: </span> 8.00 - 18.00</div>
+              <div class="hour"><span> Czwartek: </span> 8.00 - 18.00</div>
+              <div class="hour"><span> Piątek: </span> 8.00 - 18.00</div>
+              <div class="hour"><span> Sobota: </span> 8.00 - 16.00</div>
+              <div class="hour"><span> Niedziela: </span> 10.00 - 18.00</div>
+    
+            </div>
     </div>
 
 
@@ -299,6 +311,46 @@ Sunt aliqua nisi nulla id. Minim elit veniam ullamco consequat dolor ut fugiat l
 
 
 
+
+
+<section id="documents" class="documents">
+
+
+  <div class="documentstext">Działalność</div>
+
+  <div class="documentsitems">
+      <div class="item1">
+       <img src="feather/download.svg" alt="download"> <a title="Pobierz STATUT OCHOTNICZEJ STRAŻY POŻARNEJ SKOWRODY POŁUDNIOWEJ" href="STATUT OCHOTNICZEJ STRAŻY POŻARNEJ SKOWRODY POŁUDNIOWEJ.pdf" download>STATUT OCHOTNICZEJ STRAŻY POŻARNEJ SKOWRODY POŁUDNIOWEJ</a>
+      </div>
+
+      <div class="item2">
+        <img src="feather/download.svg" alt="download">  <a title="Pobierz REGULAMIN WEWNĘTRZNY OCHOTNICZEJ STRAŻY POŻARNEJ" href="REGULAMIN WEWNĘTRZNY OCHOTNICZEJ STRAŻY POŻARNEJ.pdf" download>REGULAMIN WEWNĘTRZNY OCHOTNICZEJ STRAŻY POŻARNEJ</a>
+      </div>
+
+  </div>
+</section>
+
+
+
+<section id="links" class="links">
+
+
+  <div class="linkstext">Działalność</div>
+
+  <div class="linksitems">
+      <a class="link" href="https://m.facebook.com/people/OSP-Skowroda-Po%C5%82udniowa/100070326244202/?locale=bs_BA"><img src="fbicon.png" alt="Facebook"></a>
+      <a class="link" href="https://mapa.targeo.pl/osp-w-skowrodzie-poludniowej-99-413-skowroda-poludniowa~12512660/przedsiebiorstwo-firma/adres"><img src="targeoicon.png" alt="targeo"></a>
+      <a class="link" href="https://ratownicza.net/img-osp_skowroda_poludniowa,15041.html"><img src="ratowniczaicon.png" alt="ratownicza"></a>
+      <a class="link" href="https://rejestr.io/krs/259231/ochotnicza-straz-pozarna-w-skowrodzie-poludniowej"><img src="rejestricon.svg" alt="Rejestrio"></a>
+
+  </div>
+</section>
+
+
+
+<footer>
+  
+</footer>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
@@ -323,6 +375,30 @@ document.addEventListener("DOMContentLoaded", function() {
   var aboutusbuttonmenu = document.querySelector('#aboutusbuttonmenu');
   var ouractivity = document.querySelector('#ouractivitybttonmenu');
   var members = document.querySelector('#membersbuttonmenu');
+  var news = document.querySelector('#newsbuttonmenu');
+  var contact = document.querySelector('#contactbuttonmenu');
+  var documents = document.querySelector('#documentsbuttonmenu');
+  var links = document.querySelector('#linksbuttonmenu');
+
+  links.addEventListener("click", function() {
+    var linkssection= document.querySelector('#links');
+    linkssection.scrollIntoView({ behavior: "smooth" });
+  });
+
+  documents.addEventListener("click", function() {
+    var documentssection= document.querySelector('#documents');
+    documentssection.scrollIntoView({ behavior: "smooth" });
+  });
+
+  contact.addEventListener("click", function() {
+    var contactsection = document.querySelector('#contact');
+    contactsection.scrollIntoView({ behavior: "smooth" });
+  });
+
+  news.addEventListener("click", function() {
+    var newssection = document.querySelector('#news');
+    newssection.scrollIntoView({ behavior: "smooth" });
+  });
 
   ouractivity.addEventListener("click", function() {
     var ouractivitysection = document.querySelector('#ouractivity');
