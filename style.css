@@ -1542,6 +1542,7 @@ Ustawienia dla ekranów o mniejszym rozmiarze
     li.menuitems:hover::before{
         width: calc(100% + 10px);
     }
+
 }
 @media screen and (max-width: 1308px) {
 
@@ -1587,40 +1588,96 @@ Ustawienia dla ekranów o mniejszym rozmiarze
       right: 2rem;
     }
 
-    .documents .documentsitems .item1{
-      text-align: left;
-      margin-left: 5rem;
-    }    
+
     .contactcontact{
       justify-content: left;
       margin: 0px 0rem;
     }
-    .documents .documentsitems .item2{
-      text-align: left;
-      margin-left: 5rem;
+
+    .newss{
+      width: 60vw;
+      margin-bottom: 2rem;
+    }
+
+    footer{
+      width: 100vw;
+      margin-top: 5rem;
+      background-color: black;
+      color: white;
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 19px;
+      display: block;
+      font-weight: 300;
+    }
+    .footer{
+      padding: 3rem 0rem;
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* Definiowanie trzech kolumn o równej szerokości */
+      gap: 20px 100px;
+      margin-left: 6rem;
+      margin-bottom: 5rem;
+    }
+    .footer li{
+      cursor: pointer;
+      position: relative;
+    }
+    .footer li:hover::before{
+      width: 100%;
+    }
+    .footer li::before{
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      width: 0%;
+      transition-duration: .3s;
+      background-color: white;
+      height: 1px;
+    }
+    
+    body{
+      overflow-x: hidden;
+    }
+    
+    footer .media img{
+      width: 7%;
+      position: absolute;
+      right: 2rem;
+      filter: grayscale(100%);
+      margin-top: -6rem;
+    }
+    
+    
+    footer .copyright{
+      justify-content: center;
+      display: flex;
+      align-items: end;
+      padding-bottom: 2rem;
     }
 
     .openstimes::before{
-        z-index: -8;
+      display: none;
+    }
+
+    .openstimes{
+      right: 1px;
     }
 
     .leftsidemember{
       margin-left: -8rem;
     }
 
-    .menubutton.active img {
-        transform: rotate(90deg);
-      }
+
       
-    ul {
+    header ul {
         display: none !important;
       }
       
-      ul.show-menu {
+      header ul.show-menu {
         display: flex !important;
       }
       
-    ul {
+    header ul {
 
       flex-direction: column;
       position: absolute;
@@ -1639,10 +1696,108 @@ Ustawienia dla ekranów o mniejszym rozmiarze
     li.menuitems:hover::before {
       width: calc(100% - 90px);
     }
+
+
+    .ouractivity .imgleft{
+      margin-left: 15rem;
+    }
+    .ouractivity .imgleft img{
+      width: 50%;
+    }
+
+    .ouractivity .description{
+      width: 90vw;
+      margin-left: 3rem;
+      text-align: center;
+    }
+
+    .members .members_members .leftsidemember {
+      padding-left: 20rem;
+
+    }
+
+    .contactdata .contactadress .contactadresstext::after{
+      content: "?";
+      position: absolute;
+      font-size: 40px;
+      right: 41rem;
+      top: .8rem;
+      font-weight: 500;
+      color: red;
+      transition-duration: .2s;
+    }
+
+
+    .contact .text{
+      margin-bottom: -4rem;
+      margin-top: 40px;
+    }
+
+    .contactcontact{
+      flex-direction: column;
+    }
+    iframe{
+      margin: 25vw;
+    }
+    .contactdata{
+      margin-top: -8rem;
+    }
+
+    .openstimes{
+      right: 4rem;
+      width: 30vw;
+      margin-top: -390px;
+    }
+
   }
   
   
-  
+  @media screen and (max-width: 985px){
+    .members .members_members .leftsidemember {
+      padding-left: 12rem;
+    }
+    .squaredotss{
+      display: none;
+    }
+    .contactdata .contactadress .contactadresstext::after{
+      display: none;
+    }
+    .openstimes{
+      display: block;
+      opacity: 1;
+    }
+    iframe{
+      margin: 15vw;
+      margin-bottom: 29vh;
+  }
+}
+
+@media screen and (max-width: 859px){
+  .footer{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .links .linksitems{
+    flex-direction: column;
+    gap: 6rem;
+  }
+
+  .contact .contactdata{
+
+  }
+  .openstimes {
+    font-family: 'Ubuntu', sans-serif;
+    right: 10px;
+    box-shadow: 0px 0px 2px black;
+    border-radius: 5px;
+    width: 20vw;
+    height: 48vh;
+    display: none;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 1s;
+    cursor: default;
+  }
+}
 
   
 @media screen and (max-width: 500px){

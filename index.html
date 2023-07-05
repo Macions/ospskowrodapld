@@ -386,87 +386,119 @@ Sunt aliqua nisi nulla id. Minim elit veniam ullamco consequat dolor ut fugiat l
 
 
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-  window.addEventListener('load', function() {
-    var element = document.querySelector('.toptext');
-    var cytat = document.querySelector('.cytattop');
+  document.addEventListener("DOMContentLoaded", function() {
+    window.addEventListener('load', function() {
+      var element = document.querySelector('.toptext');
+      var cytat = document.querySelector('.cytattop');
 
-    element.classList.add('show');
-    cytat.classList.add('showcytattop');
-  });
+      element.classList.add('show');
+      cytat.classList.add('showcytattop');
+    });
 
-  var aboutusbuttonmenu = document.querySelector('#aboutusbuttonmenu');
-  var ouractivity = document.querySelector('#ouractivitybttonmenu');
-  var members = document.querySelector('#membersbuttonmenu');
-  var news = document.querySelector('#newsbuttonmenu');
-  var contact = document.querySelector('#contactbuttonmenu');
-  var documents = document.querySelector('#documentsbuttonmenu');
-  var links = document.querySelector('#linksbuttonmenu');
+    var aboutusbuttonmenu = document.querySelector('#aboutusbuttonmenu');
+    var ouractivity = document.querySelector('#ouractivitybttonmenu');
+    var members = document.querySelector('#membersbuttonmenu');
+    var news = document.querySelector('#newsbuttonmenu');
+    var contact = document.querySelector('#contactbuttonmenu');
+    var documents = document.querySelector('#documentsbuttonmenu');
+    var links = document.querySelector('#linksbuttonmenu');
 
+    var aboutusbuttonfooter = document.querySelector('#aboutusbuttonfooter');
+    var ouractivityfooter = document.querySelector('#ouractivitybttonfooter');
+    var membersfooter = document.querySelector('#membersbuttonfooter');
+    var newsfooter = document.querySelector('#newsbuttonfooter');
+    var contactfooter = document.querySelector('#contactbuttonfooter');
+    var documentsfooter = document.querySelector('#documentsbuttonfooter');
+    var linksfooter = document.querySelector('#linksbuttonfooter');
 
+    linksfooter.addEventListener("click", function() {
+      var linkssection = document.querySelector('#links');
+      linkssection.scrollIntoView({ behavior: "smooth" });
+    });
 
-  var aboutusbuttonfooter = document.querySelector('#aboutusbuttonfooter');
-  var ouractivityfooter = document.querySelector('#ouractivitybttonfooter');
-  var membersfooter = document.querySelector('#membersbuttonfooter');
-  var newsfooter = document.querySelector('#newsbuttonfooter');
-  var contactfooter = document.querySelector('#contactbuttonfooter');
-  var documentsfooter = document.querySelector('#documentsbuttonfooter');
-  var linksfooter = document.querySelector('#linksbuttonfooter');
+    documentsfooter.addEventListener("click", function() {
+      var documentssection = document.querySelector('#documents');
+      documentssection.scrollIntoView({ behavior: "smooth" });
+    });
 
-  linksfooter.addEventListener("click", function() {
-    var linkssection= document.querySelector('#links');
-    linkssection.scrollIntoView({ behavior: "smooth" });
-  });
+    contactfooter.addEventListener("click", function() {
+      var contactsection = document.querySelector('#contact');
+      contactsection.scrollIntoView({ behavior: "smooth" });
+    });
 
-  documentsfooter.addEventListener("click", function() {
-    var documentssection= document.querySelector('#documents');
-    documentssection.scrollIntoView({ behavior: "smooth" });
-  });
+    newsfooter.addEventListener("click", function() {
+      var newssection = document.querySelector('#news');
+      newssection.scrollIntoView({ behavior: "smooth" });
+    });
 
-  contactfooter.addEventListener("click", function() {
-    var contactsection = document.querySelector('#contact');
-    contactsection.scrollIntoView({ behavior: "smooth" });
-  });
+    ouractivityfooter.addEventListener("click", function() {
+      var ouractivitysection = document.querySelector('#ouractivity');
+      ouractivitysection.scrollIntoView({ behavior: "smooth" });
+    });
 
-  newsfooter.addEventListener("click", function() {
-    var newssection = document.querySelector('#news');
-    newssection.scrollIntoView({ behavior: "smooth" });
-  });
+    aboutusbuttonfooter.addEventListener("click", function() {
+      var aboutussection = document.querySelector('#aboutus');
+      aboutussection.scrollIntoView({ behavior: "smooth" });
+    });
 
-  ouractivityfooter.addEventListener("click", function() {
-    var ouractivitysection = document.querySelector('#ouractivity');
-    ouractivitysection.scrollIntoView({ behavior: "smooth" });
-  });
+    membersfooter.addEventListener("click", function() {
+      var memberssection = document.querySelector('#members');
+      memberssection.scrollIntoView({ behavior: "smooth" });
+    });
 
-  aboutusbuttonfooter.addEventListener("click", function() {
-    var aboutussection = document.querySelector('#aboutus');
-    aboutussection.scrollIntoView({ behavior: "smooth" });
-  });
+    let burger = document.querySelector(".menubutton");
+    let menu = document.querySelector("ul");
 
-  membersfooter.addEventListener("click", function() {
-    var memberssection = document.querySelector('#members');
-    memberssection.scrollIntoView({ behavior: "smooth" });
-  });
-  
+    burger.addEventListener("click", function() {
+      menu.classList.toggle("show-menu");
+      burger.classList.toggle("active");
+    });
 
-  let burger = document.querySelector(".menubutton");
-  let menu = document.querySelector("ul");
+    // Przewijanie do odpowiedniego sekcji po kliknięciu elementu w menu burgera
+    aboutusbuttonmenu.addEventListener("click", function() {
+      var aboutussection = document.querySelector('#aboutus');
+      aboutussection.scrollIntoView({ behavior: "smooth" });
+    });
 
-  burger.addEventListener("click", function() {
-    menu.classList.toggle("show-menu");
-    burger.classList.toggle("active");
-  });
+    ouractivity.addEventListener("click", function() {
+      var ouractivitysection = document.querySelector('#ouractivity');
+      ouractivitysection.scrollIntoView({ behavior: "smooth" });
+    });
 
-  let menuItems = document.querySelectorAll("li");
-  menuItems.forEach(function(menuItem) {
-    menuItem.addEventListener("click", function() {
-      menu.classList.remove("show-menu");
-      burger.classList.remove("active");
+    members.addEventListener("click", function() {
+      var memberssection = document.querySelector('#members');
+      memberssection.scrollIntoView({ behavior: "smooth" });
+    });
+
+    news.addEventListener("click", function() {
+      var newssection = document.querySelector('#news');
+      newssection.scrollIntoView({ behavior: "smooth" });
+    });
+
+    contact.addEventListener("click", function() {
+      var contactsection = document.querySelector('#contact');
+      contactsection.scrollIntoView({ behavior: "smooth" });
+    });
+
+    documents.addEventListener("click", function() {
+      var documentssection = document.querySelector('#documents');
+      documentssection.scrollIntoView({ behavior: "smooth" });
+    });
+
+    links.addEventListener("click", function() {
+      var linkssection = document.querySelector('#links');
+      linkssection.scrollIntoView({ behavior: "smooth" });
     });
   });
-});
 
-  </script>
+
+
+
+  console.log(window.innerWidth);
+
+</script>
+
+
   
   
 
