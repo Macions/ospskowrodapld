@@ -1667,10 +1667,11 @@ Ustawienia dla ekranów o mniejszym rozmiarze
       border-left: 1px solid white;
       border-right: 1px solid white;
       background-color: black;
-      z-index: 1;
-      width: 30%;
+      z-index: 100;
+      height: 100vh;
+      width: 101%;
       padding: 50px 0px;
-      gap: 45px;
+      gap: 5px;
     }
   
     li.menuitems:hover::before {
