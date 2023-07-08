@@ -1132,9 +1132,6 @@ img.banertopimg{
 
 
 
-.contactdata .contactadress{
-  cursor: pointer;
-}
 
 
 
@@ -1167,28 +1164,13 @@ img.banertopimg{
 }
 
 
-.contactdata .contactadress .contactadresstext::after{
-  content: "?";
-  position: absolute;
-  font-size: 40px;
-  right: -30px;
-  top: 40%;
-  font-weight: 500;
-  color: red;
-  transition-duration: .2s;
-}
-
-
 .contactdata .contactadress .contactadressadress{
   font-size: 27px;
   margin-top: 10px;
   padding-left: 60px;
 }
 
-.contactdata .contactadress:hover .openstimes {
-  display: block;
-  opacity: 1;
-}
+
 
 .contactdata .contactadress:hover .contactadresstext::after{
   scale: 0;
@@ -1204,8 +1186,6 @@ img.banertopimg{
   border-radius: 5px;
   width: 20vw;
   height: 48vh;
-  display: none;
-  opacity: 0;
   margin-top: -330px;
   transition-property: opacity;
   transition-duration: 1s;
@@ -1716,16 +1696,7 @@ Ustawienia dla ekranów o mniejszym rozmiarze
 
     }
 
-    .contactdata .contactadress .contactadresstext::after{
-      content: "?";
-      position: absolute;
-      font-size: 40px;
-      right: 41rem;
-      top: .8rem;
-      font-weight: 500;
-      color: red;
-      transition-duration: .2s;
-    }
+
 
 
     .contact .text{
@@ -1780,10 +1751,6 @@ Ustawienia dla ekranów o mniejszym rozmiarze
     flex-direction: column;
     gap: 6rem;
   }
-
-  .contact .contactdata{
-
-  }
   .openstimes {
     font-family: 'Ubuntu', sans-serif;
     right: 10px;
@@ -1799,7 +1766,137 @@ Ustawienia dla ekranów o mniejszym rozmiarze
   }
 }
 
+
+@media screen and (max-width: 845px){
+  .aboutus .textleft{
+    margin-left: 5%;
+  }
+  .aboutus .imgright{
+    margin-left: 25%;
+  }
+  .aboutus .imgright img{
+    margin-left: 15%;
+  }
+  .ouractivity .imgleft{
+    margin-left: 6%;
+  }
+  .ouractivity .description{
+    margin-left: 4%;
+  }
+  .membername{
+    font-size: 40px !important;
+  }
+  .leftsidemember .data{
+    margin-top: 3rem !important;
+    margin-right: 4rem !important;
+  }
+  .leftsidemember{
+    flex-direction: column !important;
+    margin-left: 0;
+  }
+
+  .openstimes{
+    display: block;
+    opacity: 1;
+    width: 45%;
+  }
+
   
+  .contactdata .contactphone .contactphonetext{
+    font-size: 30px;
+    align-items: center;
+    display: flex;
+    font-weight: 500;
+    position: relative;
+    margin-left: 60px;
+  }
+  
+  .contactdata .contactphone img{
+    position: absolute;
+    margin-top: 25px;
+    width: 35px;
+  }
+  
+  .contactdata .contactphone .contactphonetext::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 1px;
+    background-color: black;
+    height: 230%;
+    border-right: 1px dashed black;
+  }
+  
+  
+  .contactdata .contactphone .contactphonenumber{
+    font-size: 27px;
+    margin-top: 10px;
+    padding-left: 95px;
+  }
+}
+  
+@media screen and (max-width: 782px){
+.openstimes {
+  display: block;
+  position: static;
+  font-family: 'Ubuntu', sans-serif;
+  box-shadow: 0px 0px 2px black;
+  border-radius: 5px;
+  margin-top: 5rem;
+  width: 86vw;
+  cursor: default;
+}
+
+iframe{
+  margin-left: 1px;
+  width: 100vw;
+  height: 100vw;
+}
+
+.ouractivity .lineone{
+  display: none;
+}
+.ouractivity .linetwo{
+  display: none;
+}
+.ouractivity .smalllineone{
+  display: none;
+}
+.ouractivity .smalllinetwo{
+  display: none;
+}
+
+.ouractivity .imgleft{
+  justify-content: center;
+  margin: 0;
+  margin-left: -2rem;
+}
+
+.banertopimg{
+  position: absolute;
+}
+ .toptext{
+ margin-top: 20rem;
+}
+
+.cytattop{
+  bottom: 100px;
+}
+}
+
+@media screen and (max-width: 563px){
+  .leftsidemember {
+    width: 100vw;
+  }
+  .textskpo{
+    margin-left: 2%;
+  }
+  .cytattop{
+    bottom: -110px;
+  }
+}
+
 @media screen and (max-width: 500px){
 
     img.banertopimg{
