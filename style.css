@@ -1526,6 +1526,9 @@ Ustawienia dla ekranów o mniejszym rozmiarze
 }
 @media screen and (max-width: 1308px) {
 
+body{
+  background-color: green;
+}
 
     .aboutus .imgright{
       margin-left: 20rem;
